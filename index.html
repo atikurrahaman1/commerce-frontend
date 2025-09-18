@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">E-Store</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#" id="cart-link">Cart <span id="cart-count">0</span></a>
+        <a href="#" id="login-btn">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Welcome to E-Store</h1>
+      <p>Find the best products at the best prices</p>
+    </section>
+
+    <section class="products">
+      <h2>Featured Products</h2>
+      <div id="products-container" class="products-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 E-Store. All rights reserved.</p>
+  </footer>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+        <input type="email" id="email" placeholder="Email" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Login</button>
+      </form>
+      <p>Don't have an account? <a href="#" id="register-link">Register</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
