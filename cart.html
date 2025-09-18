@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">E-Store</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="#" id="cart-link">Cart <span id="cart-count">0</span></a>
+        <a href="#" id="login-btn">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Shopping Cart</h1>
+    <div id="cart-items" class="cart-container"></div>
+    <div class="cart-summary">
+      <h2>Order Summary</h2>
+      <p>Subtotal: $<span id="subtotal">0.00</span></p>
+      <p>Shipping: $<span id="shipping">5.99</span></p>
+      <p>Tax: $<span id="tax">0.00</span></p>
+      <h3>Total: $<span id="total">0.00</span></h3>
+      <button id="checkout-btn">Proceed to Checkout</button>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 E-Store. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
